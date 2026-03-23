@@ -13,8 +13,8 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;   /* 🔥 MUITO IMPORTANTE */
-    overflow: hidden;     /* impede invadir o footer */
+    position: relative;   
+    overflow: hidden;     
 }
 
 .popup {
@@ -149,13 +149,11 @@ footer a{
     z-index: 1;
 }
 
-
-/* cada coração */
 .coracao {
-    position: absolute;  /* ESSENCIAL pra espalhar */
+    position: absolute;  
     font-size: 24px;
     cursor: pointer;
-    pointer-events: auto; /* permite clique nele */
+    pointer-events: auto; 
     transition: transform 0.2s;
 }
 
@@ -199,8 +197,8 @@ footer a{
     width: 80%;
     max-width: 600px;
 
-    max-height: 80vh;   /* 🔥 evita encostar no footer */
-    overflow-y: auto;   /* scroll interno */
+    max-height: 80vh;   
+    overflow-y: auto;  
 
     padding: 30px;
     border-radius: 15px;
@@ -212,7 +210,7 @@ footer a{
 }
 
 .popup.final p {
-    text-align: justify;   /* 🔥 deixa estilo texto de livro */
-    line-height: 1.6;      /* espaçamento entre linhas */
+    text-align: justify;   
+    line-height: 1.6;      
     margin-bottom: 15px;
 }
