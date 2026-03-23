@@ -172,6 +172,7 @@ footer a{
 
 .coracao {
     animation: flutuar 3s infinite ease-in-out;
+    z-index: 1;
 }
 
 @keyframes flutuar {
@@ -216,14 +217,22 @@ footer a{
 }
 
 #message {
-    position: absolute;
-    z-index: 5; /* maior que os corações */
-    
+    position: fixed; /* 👈 em vez de absolute */
+    z-index: 9999;   /* 👈 bem alto pra garantir */
+
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    text-shadow: 0 0 10px rgba(255, 0, 0, 0.8);
+
     text-align: center;
     font-size: 20px;
-    max-width: 80%;
+    max-width: 85%;
+    padding: 10px;
+
+    pointer-events: none; /* 👈 evita travar clique nos corações */
+
+    text-shadow: 0 0 10px rgba(255, 0, 0, 0.8);
+
+    background: rgba(255, 0, 0, 0.4);
+    border-radius: 10px;
 }
